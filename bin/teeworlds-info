@@ -1,17 +1,19 @@
 #!/usr/bin/env node
 'use strict';
 
+var path = require('path');
 var teeworldsInfo = require('../lib/teeworlds-info');
 
-var server = process.env.TW_SERVER;
-var port = process.env.TW_PORT ? parseInt(process.env.TW_PORT) : 0;
-
-if (!server || !port) {
-  process.stderr.write('"TW_SERVER" and "TW_PORT" enviroment variables required\n');
-  return process.exit(1);
+var argv = process.argv.slice(2);
+if (argv.length != 2) {
+  process.stdout.write('Usage: ' + path.basename(process.argv[1]) + ' host port\n');
+  process.exit(1);
 }
 
-teeworldsInfo.getInfo(server, port).then(function(info) {
+var host = argv[0];
+var port = parseInt(argv[1]);
+
+teeworldsInfo.getInfo(host, port).then(function(info) {
   process.stdout.write(JSON.stringify(info) + '\n');
 }, function(err) {
   process.stderr.write(err.message + '\n');
