@@ -1,5 +1,5 @@
 {
-  "name": "teeworlds-info-js",
+  "name": "teeworlds-info",
   "description": "Library and console tool for Teeworlds servers info gathering",
   "version": "1.0.0",
   "main": "lib/teeworlds-info",
