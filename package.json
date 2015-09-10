@@ -1,7 +1,13 @@
 {
   "name": "teeworlds-info-js",
   "version": "0.0.0",
-  "main": "bin/teeworlds-info",
+  "main": "lib/teeworlds-info",
+  "bin": {
+    "teeworlds-info": "bin/teeworlds-info"
+  },
   "author": "Black Roland (https://github.com/black-roland)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": ">=2.0.0"
+  }
 }

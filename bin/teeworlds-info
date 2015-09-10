@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+'use strict';
+
+var teeworldsInfo = require('../lib/teeworlds-info');
+
+var server = process.env.TW_SERVER;
+var port = process.env.TW_PORT ? parseInt(process.env.TW_PORT) : 0;
+
+if (!server) console.error('Undefined "TW_SERVER" enviroment variable');
+if (!port) console.error('Undefined "TW_PORT" enviroment variable');
+if (!server || !port) return process.exit(1);
+
+teeworldsInfo.getInfo(server, port);
