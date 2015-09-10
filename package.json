@@ -2,7 +2,7 @@
   "name": "teeworlds-info",
   "description": "Library and console tool for Teeworlds servers info gathering",
   "version": "1.0.0",
-  "main": "lib/teeworlds-info",
+  "main": "lib/teeworlds-info.js",
   "bin": {
     "teeworlds-info": "bin/teeworlds-info"
   },
