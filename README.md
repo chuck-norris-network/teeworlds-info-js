@@ -1,2 +1,2 @@
 # teeworlds-info-js
-Library and console tool to obtain Teeworlds servers info
+Library and console tool for Teeworlds servers info gathering.
