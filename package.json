@@ -1,11 +1,8 @@
 {
   "name": "teeworlds-info",
-  "description": "Library and console tool for Teeworlds servers info gathering",
+  "description": "Teeworlds servers info gathering",
   "version": "1.0.2",
   "main": "lib/teeworlds-info.js",
-  "bin": {
-    "teeworlds-info": "bin/teeworlds-info"
-  },
   "author": "Black Roland (https://github.com/black-roland)",
   "license": "MIT",
   "keywords": [
