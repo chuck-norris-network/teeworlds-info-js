@@ -10,12 +10,16 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/black-roland/teeworlds-info-js"
+    "url": "https://github.com/chuck-norris-network/teeworlds-info-js.git"
+  },
+  "scripts": {
+    "current": "ncu -u -a"
   },
   "dependencies": {
-    "buffer-split": "0.0.0"
+    "buffer-split": "1.0.0"
   },
   "devDependencies": {
-    "eslint": "^2.10.0"
+    "eslint": "^3.3.1",
+    "npm-check-updates": "^2.8.0"
   }
 }
