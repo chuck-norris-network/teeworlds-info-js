@@ -13,6 +13,7 @@
     "url": "https://github.com/chuck-norris-network/teeworlds-info-js.git"
   },
   "scripts": {
+    "test": "eslint lib/**",
     "current": "ncu -u -a"
   },
   "dependencies": {
