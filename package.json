@@ -1,7 +1,7 @@
 {
   "name": "teeworlds-info",
   "description": "Teeworlds servers info gathering",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "lib/index.js",
   "author": "Black Roland (https://github.com/black-roland)",
   "license": "MIT",
